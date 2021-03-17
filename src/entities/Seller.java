@@ -1,4 +1,4 @@
-package model.entities;
+package entities;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -88,7 +88,7 @@ public class Seller implements Serializable {
 
     @Override
     public String toString() {
-        return "Seller{" +
+        return "entities.Seller{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +

@@ -1,4 +1,4 @@
-package model.entities;
+package entities;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -47,7 +47,7 @@ public class Department implements Serializable {
 
     @Override
     public String toString() {
-        return "Department{" +
+        return "entities.Department{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
