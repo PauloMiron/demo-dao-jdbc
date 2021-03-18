@@ -29,10 +29,15 @@ public class Application {
             System.out.println(obj);
         }
 
-        System.out.println("\n===TESTE 4: seller findAll===");
+        System.out.println("\n===TESTE 4: seller Insert===");
         Seller newSeller = new Seller(null, "Greg", "Greg@email", new Date(), 400.00,department);
         sellerDao.insert(newSeller);
-
         System.out.println("Inserted! New id = " + newSeller.getId());
+
+        System.out.println("\n===TESTE 5: seller Update ===");
+        seller = sellerDao.findById(1);
+        seller.setName("Martha Waine");
+        sellerDao.update(seller);
+        System.out.println("Update Completed");
     }
 }
